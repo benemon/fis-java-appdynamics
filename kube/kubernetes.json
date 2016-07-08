@@ -61,7 +61,8 @@
           "env" : [ ],
           "from" : {
             "kind" : "ImageStreamTag",
-            "name" : "fis-java-openshift:latest"
+            "name" : "fis-java-openshift:latest",
+            "namespace" : "openshift"
           }
         },
         "type" : "Docker"
