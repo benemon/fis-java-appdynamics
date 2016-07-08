@@ -21,7 +21,7 @@ public class BuildConfigKubernetesModelProcessor {
                     .withTriggers(getTriggers())
                     .withNewSource()
                         .withNewGit()
-                            .withUri("")
+                            .withUri("https://github.com/benemon/fis-java-appdynamics")
                         .endGit()
                         .withContextDir("src/main/docker")
                         .withType("Git")
