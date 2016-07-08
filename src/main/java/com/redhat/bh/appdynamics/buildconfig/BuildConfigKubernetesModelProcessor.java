@@ -31,6 +31,7 @@ public class BuildConfigKubernetesModelProcessor {
                             .withNewFrom()
                                 .withKind("ImageStreamTag")
                                 .withName("fis-java-openshift:latest")
+                                .withNamespace("openshift")
                             .endFrom()
                         .endDockerStrategy()
                         .withType("Docker")

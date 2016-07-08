@@ -41,7 +41,7 @@ objects:
     source:
       contextDir: "src/main/docker"
       git:
-        uri: ""
+        uri: "https://github.com/benemon/fis-java-appdynamics"
       images: []
       secrets: []
       type: "Git"
