@@ -1,0 +1,49 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                          http://maven.apache.org/xsd/settings-1.0.0.xsd">
+	  <profiles>
+		<profile>
+			<id>build.repos</id>
+			<repositories>
+			  <repository>
+				<snapshots>
+				  <enabled>false</enabled>
+				</snapshots>
+				<id>central</id>
+				<name>redhat-all</name>
+				<url>http://artifactory-oss:8081/artifactory/redhat-all</url>
+			  </repository>
+			  <repository>
+				<snapshots />
+				<id>snapshots</id>
+				<name>redhat-all</name>
+				<url>http://artifactory-oss:8081/artifactory/redhat-all</url>
+			  </repository>
+			</repositories>
+			<pluginRepositories>
+			  <pluginRepository>
+				<snapshots>
+				  <enabled>false</enabled>
+				</snapshots>
+				<id>central</id>
+				<name>redhat-all</name>
+				<url>http://artifactory-oss:8081/artifactory/redhat-all</url>
+			  </pluginRepository>
+			  <pluginRepository>
+				<snapshots />
+				<id>snapshots</id>
+				<name>redhat-all</name>
+				<url>http://artifactory-oss:8081/artifactory/redhat-all</url>
+			  </pluginRepository>
+			</pluginRepositories>
+		</profile>
+	</profiles>
+
+	<activeProfiles>
+		<activeProfile>build.repos</activeProfile>
+	</activeProfiles>
+	
+</settings>
+
+

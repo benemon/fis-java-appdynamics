@@ -1,0 +1,60 @@
+AppDynamics Thread Profiler - README - 0.1
+
+How do I get a thread profile:
+
+1. Attach the agent
+2. Start the thread profiler
+3. Exercise business transactions of interest
+4. Stop the profiler
+
+1. Attaching the profiler:
+==========================
+    Java 1.5 (local agent):
+
+        Add the profiler agent with a javaagent param
+
+        eg. java -javaagent:/app/tprofiler-0.1/javaagent.jar -jar myprogram.jar
+
+    Java 1.6 (remote agent attach):
+        You can use the above method, or use the remote attach option.
+
+        eg: java -jar:/app/theadprofiler-0.1/tp.jar
+
+        The program will list all the jvms that you can attach to, select the
+        one that you want to attach by entering the ID displayed in the list.
+
+2. Starting the thread profiler:
+================================
+    Local agent:
+        edit the file threadprofiler.properties
+        change property value for enabled to "true" (no quotes)
+
+        threadprofiler.properties:
+            enabled=true
+
+    Remote agent:
+        enter commmand "start" (no quotes)
+
+        eg:
+        >  start
+        Thread profiler enabled. Logging under [/app/tprofiler-0.1/threadprofiler-logs/]
+
+3. Stopping the thread profiler:
+================================
+    Local agent:
+        edit the file threadprofiler.properties
+        change property value for enabled to "false" (no quotes)
+
+        threadprofiler.properties:
+            enabled=false
+
+    Remote agent:
+        enter command "stop"
+        enter command "detach"
+        enter command "exit"
+
+        >  stop
+        Thread profiler disabled.
+        >  detach
+        Agent is shutdown: Wed Apr 06 09:10:12 PDT 2011
+        >  exit
