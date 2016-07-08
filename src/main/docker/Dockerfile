@@ -4,5 +4,7 @@ USER root
 
 ADD appdynamics/ /opt/appdynamics/
 
+RUN chown -R 185:185 /opt/appdynamics/
+
 #jboss from FIS
 USER 185
