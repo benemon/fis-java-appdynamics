@@ -50,13 +50,13 @@ objects:
         env: []
         from:
           kind: "ImageStreamTag"
-          name: "fis-java-openshift:1.0"
+          name: "fis-java-openshift:latest"
       type: "Docker"
     triggers:
     - imageChange:
         from:
           kind: "ImageStreamTag"
-          name: "fis-java-openshift:1.0"
+          name: "fis-java-openshift:latest"
           namespace: "openshift"
       type: "ImageChange"
 parameters: []

@@ -30,7 +30,7 @@ public class BuildConfigKubernetesModelProcessor {
                         .withNewDockerStrategy()
                             .withNewFrom()
                                 .withKind("ImageStreamTag")
-                                .withName("fis-java-openshift:1.0")
+                                .withName("fis-java-openshift:latest")
                             .endFrom()
                         .endDockerStrategy()
                         .withType("Docker")
@@ -48,7 +48,7 @@ public class BuildConfigKubernetesModelProcessor {
 
     private BuildTriggerPolicy getTriggers() {
         ObjectReference from = new ObjectReference();
-		from.setName("fis-java-openshift:1.0");
+		from.setName("fis-java-openshift:latest");
         from.setKind("ImageStreamTag");
         from.setNamespace("openshift");
 
