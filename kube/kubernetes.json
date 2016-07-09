@@ -24,7 +24,7 @@
       "name" : "fis-java-appdynamics"
     },
     "spec" : {
-      "dockerImageRepository" : "172.30.49.26:5000/openshift/fis-java-appdynamics",
+      "dockerImageRepository" : "",
       "tags" : [ ]
     }
   }, {

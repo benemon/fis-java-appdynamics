@@ -15,7 +15,7 @@
     This can be overridden with an environment variable 'CONTROLLER_HOST_NAME' or
     the system property '-Dappdynamics.controller.hostName'  -->
 
-    <controller-host>redhatinc298.saas.appdynamics.com</controller-host>
+    <controller-host></controller-host>
 
     <!--  This is the http(s) port of the AppDynamics Controller , If 'controller-ssl-enabled' below is set to true, you must
     specify the HTTPS port of the Controller, otherwise specify the HTTP port. Controller gets installed at port 8090 by default.
@@ -25,7 +25,7 @@
     This can be overridden with an environment variable 'APPDYNAMICS_CONTROLLER_PORT' or
     the system property '-Dappdynamics.controller.port'  -->
 
-    <controller-port>80</controller-port>
+    <controller-port></controller-port>
 
     <!--  This specifies if the AppDynamics agent should use SSL(HTTPS) to connect to the Controller. If you set this to true,
     the controller port property above should be set to the HTTPs port of the Controller.

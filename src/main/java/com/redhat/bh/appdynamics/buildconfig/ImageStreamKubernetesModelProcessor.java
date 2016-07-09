@@ -14,7 +14,7 @@ public class ImageStreamKubernetesModelProcessor {
                     .withLabels(getLabels())
                 .endMetadata()
                 .withNewSpec()
-                    .withDockerImageRepository("172.30.49.26:5000/openshift/fis-java-appdynamics")
+                    .withDockerImageRepository("")
                 .endSpec()
             .endImageStreamObject()
             .build();
