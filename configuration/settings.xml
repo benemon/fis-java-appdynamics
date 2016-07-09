@@ -12,13 +12,13 @@
 				</snapshots>
 				<id>central</id>
 				<name>redhat-all</name>
-				<url>http://artifactory-oss:8081/artifactory/redhat-all</url>
+				<url>http://artifactory-dev1.rhel-cdk.10.1.2.2.xip.io/artifactory/redhat-all</url>
 			  </repository>
 			  <repository>
 				<snapshots />
 				<id>snapshots</id>
 				<name>redhat-all</name>
-				<url>http://artifactory-oss:8081/artifactory/redhat-all</url>
+				<url>http://artifactory-dev1.rhel-cdk.10.1.2.2.xip.io/artifactory/redhat-all</url>
 			  </repository>
 			</repositories>
 			<pluginRepositories>
@@ -28,13 +28,13 @@
 				</snapshots>
 				<id>central</id>
 				<name>redhat-all</name>
-				<url>http://artifactory-oss:8081/artifactory/redhat-all</url>
+				<url>http://artifactory-dev1.rhel-cdk.10.1.2.2.xip.io/artifactory/redhat-all</url>
 			  </pluginRepository>
 			  <pluginRepository>
 				<snapshots />
 				<id>snapshots</id>
 				<name>redhat-all</name>
-				<url>http://artifactory-oss:8081/artifactory/redhat-all</url>
+				<url>http://artifactory-dev1.rhel-cdk.10.1.2.2.xip.io/artifactory/redhat-all</url>
 			  </pluginRepository>
 			</pluginRepositories>
 		</profile>
