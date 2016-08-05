@@ -15,7 +15,7 @@
     This can be overridden with an environment variable 'CONTROLLER_HOST_NAME' or
     the system property '-Dappdynamics.controller.hostName'  -->
 
-    <controller-host>redhatinc298.saas.appdynamics.com</controller-host>
+    <controller-host></controller-host>
 
     <!--  This is the http(s) port of the AppDynamics Controller , If 'controller-ssl-enabled' below is set to true, you must
     specify the HTTPS port of the Controller, otherwise specify the HTTP port. Controller gets installed at port 8090 by default.
@@ -25,14 +25,14 @@
     This can be overridden with an environment variable 'APPDYNAMICS_CONTROLLER_PORT' or
     the system property '-Dappdynamics.controller.port'  -->
 
-    <controller-port>80</controller-port>
+    <controller-port></controller-port>
 
     <!--  This specifies if the AppDynamics agent should use SSL(HTTPS) to connect to the Controller. If you set this to true,
     the controller port property above should be set to the HTTPs port of the Controller.
     This can be overridden with an environment variable 'APPDYNAMICS_CONTROLLER_SSL_ENABLED' or
     the system property '-Dappdynamics.controller.ssl.enabled'  -->
 
-    <controller-ssl-enabled>false</controller-ssl-enabled>
+    <controller-ssl-enabled></controller-ssl-enabled>
 
     <!--  Specify the logical business application name that this jvm node belongs to.
     Note that this is not the deployment name(ear/war/jar) on the application server.
@@ -82,12 +82,12 @@
     This can be overridden with an environment variable 'APPDYNAMICS_AGENT_ACCOUNT_NAME' or
     the system property '-Dappdynamics.agent.accountName'  -->
 
-    <account-name>RedHatInc298</account-name>
+    <account-name></account-name>
 
     <!--  This can be overridden with an environment variable 'APPDYNAMICS_AGENT_ACCOUNT_ACCESS_KEY' or
     the system property '-Dappdynamics.agent.accountAccessKey'  -->
 
-    <account-access-key>mwuedt7enjqo</account-access-key>
+    <account-access-key></account-access-key>
 
     <!--  Change to 'true' only under special circumstances where this agent has been moved to a new application and/or tier
     from the UI but you want to override that move by specifying a new application name and/or tier name in the agent configuration.  -->
